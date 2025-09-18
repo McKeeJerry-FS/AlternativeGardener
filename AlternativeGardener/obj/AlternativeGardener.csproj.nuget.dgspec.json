@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jerry\\source\\repos\\McKeeJerry-FS\\AlternativeGardener\\AlternativeGardener\\AlternativeGardener.csproj": {}
+    "I:\\Personally Created Project\\AlternativeGardener\\AlternativeGardener\\AlternativeGardener.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jerry\\source\\repos\\McKeeJerry-FS\\AlternativeGardener\\AlternativeGardener\\AlternativeGardener.csproj": {
+    "I:\\Personally Created Project\\AlternativeGardener\\AlternativeGardener\\AlternativeGardener.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jerry\\source\\repos\\McKeeJerry-FS\\AlternativeGardener\\AlternativeGardener\\AlternativeGardener.csproj",
+        "projectUniqueName": "I:\\Personally Created Project\\AlternativeGardener\\AlternativeGardener\\AlternativeGardener.csproj",
         "projectName": "AlternativeGardener",
-        "projectPath": "C:\\Users\\jerry\\source\\repos\\McKeeJerry-FS\\AlternativeGardener\\AlternativeGardener\\AlternativeGardener.csproj",
-        "packagesPath": "C:\\Users\\jerry\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jerry\\source\\repos\\McKeeJerry-FS\\AlternativeGardener\\AlternativeGardener\\obj\\",
+        "projectPath": "I:\\Personally Created Project\\AlternativeGardener\\AlternativeGardener\\AlternativeGardener.csproj",
+        "packagesPath": "C:\\Users\\jmckee\\.nuget\\packages\\",
+        "outputPath": "I:\\Personally Created Project\\AlternativeGardener\\AlternativeGardener\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jerry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jmckee\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
