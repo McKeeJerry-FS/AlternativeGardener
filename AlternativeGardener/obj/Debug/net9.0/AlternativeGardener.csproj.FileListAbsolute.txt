@@ -429,7 +429,6 @@ I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\
 I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\staticwebassets.build.json.cache
 I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\staticwebassets.development.json
 I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\Alternat.2C8B014D.Up2Date
 I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\AlternativeGardener.dll
 I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\refint\AlternativeGardener.dll
@@ -874,3 +873,4 @@ C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardene
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\AlternativeGardener.pdb
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\AlternativeGardener.genruntimeconfig.cache
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\ref\AlternativeGardener.dll
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
