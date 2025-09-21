@@ -12,4 +12,10 @@ public class ApplicationDbContext : IdentityDbContext<AppUser>
     }
 
     public DbSet<Garden> Gardens { get; set; }
+    public DbSet<Plant> Plants { get; set; }
+    public DbSet<Record> Records { get; set; }
+    public DbSet<Equipment> Equipment { get; set; }
+    public DbSet<Nutrient> Nutrients { get; set; }
+    public DbSet<Chemical> Chemicals { get; set; }
+    
 }

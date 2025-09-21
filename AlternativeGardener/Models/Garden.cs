@@ -23,9 +23,9 @@ namespace AlternativeGardener.Models
 
         // Navigation Properties
         public IEnumerable<Plant>? Plants { get; set; }
-        //public IEnumerable<Equipment>? EquipmentList { get; set; }
-        //public IEnumerable<Nutrient>? Nutrients { get; set; }
-        //public IEnumerable<Chemical>? Chemicals { get; set; }
+        public IEnumerable<Equipment>? EquipmentList { get; set; }
+        public IEnumerable<Nutrient>? Nutrients { get; set; }
+        public IEnumerable<Chemical>? Chemicals { get; set; }
 
         //public IEnumerable<Record>? DailyRecords { get; set; }
 

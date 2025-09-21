@@ -97,6 +97,96 @@ namespace AlternativeGardener.Data.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("AlternativeGardener.Models.Chemical", b =>
+                {
+                    b.Property<int>("ChemicalId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ChemicalId"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<int?>("GardenId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("PurchaseDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Supplier")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("ChemicalId");
+
+                    b.HasIndex("GardenId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Chemicals");
+                });
+
+            modelBuilder.Entity("AlternativeGardener.Models.Equipment", b =>
+                {
+                    b.Property<int>("EquipmentId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EquipmentId"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<int?>("GardenId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("PurchaseDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Supplier")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("EquipmentId");
+
+                    b.HasIndex("GardenId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Equipment");
+                });
+
             modelBuilder.Entity("AlternativeGardener.Models.Garden", b =>
                 {
                     b.Property<int>("GardenID")
@@ -127,6 +217,51 @@ namespace AlternativeGardener.Data.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Gardens");
+                });
+
+            modelBuilder.Entity("AlternativeGardener.Models.Nutrient", b =>
+                {
+                    b.Property<int>("NutrientId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("NutrientId"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<int?>("GardenId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("PurchaseDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Supplier")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("NutrientId");
+
+                    b.HasIndex("GardenId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Nutrients");
                 });
 
             modelBuilder.Entity("AlternativeGardener.Models.Plant", b =>
@@ -190,6 +325,9 @@ namespace AlternativeGardener.Data.Migrations
                     b.Property<string>("PruningSchedule")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("RecordId")
+                        .HasColumnType("int");
+
                     b.Property<string>("SoilType")
                         .HasColumnType("nvarchar(max)");
 
@@ -208,7 +346,52 @@ namespace AlternativeGardener.Data.Migrations
 
                     b.HasIndex("GardenId");
 
-                    b.ToTable("Plant");
+                    b.HasIndex("RecordId");
+
+                    b.ToTable("Plants");
+                });
+
+            modelBuilder.Entity("AlternativeGardener.Models.Record", b =>
+                {
+                    b.Property<int>("RecordId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RecordId"));
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("GardenId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Notes")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("RecordId");
+
+                    b.HasIndex("GardenId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Records");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -344,11 +527,60 @@ namespace AlternativeGardener.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("AlternativeGardener.Models.Chemical", b =>
+                {
+                    b.HasOne("AlternativeGardener.Models.Garden", "Garden")
+                        .WithMany("Chemicals")
+                        .HasForeignKey("GardenId");
+
+                    b.HasOne("AlternativeGardener.Models.AppUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Garden");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("AlternativeGardener.Models.Equipment", b =>
+                {
+                    b.HasOne("AlternativeGardener.Models.Garden", null)
+                        .WithMany("EquipmentList")
+                        .HasForeignKey("GardenId");
+
+                    b.HasOne("AlternativeGardener.Models.AppUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("AlternativeGardener.Models.Garden", b =>
                 {
                     b.HasOne("AlternativeGardener.Models.AppUser", "User")
                         .WithMany()
                         .HasForeignKey("UserId");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("AlternativeGardener.Models.Nutrient", b =>
+                {
+                    b.HasOne("AlternativeGardener.Models.Garden", "Garden")
+                        .WithMany("Nutrients")
+                        .HasForeignKey("GardenId");
+
+                    b.HasOne("AlternativeGardener.Models.AppUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Garden");
 
                     b.Navigation("User");
                 });
@@ -363,9 +595,30 @@ namespace AlternativeGardener.Data.Migrations
                         .WithMany("Plants")
                         .HasForeignKey("GardenId");
 
+                    b.HasOne("AlternativeGardener.Models.Record", null)
+                        .WithMany("Plants")
+                        .HasForeignKey("RecordId");
+
                     b.Navigation("AppUser");
 
                     b.Navigation("Garden");
+                });
+
+            modelBuilder.Entity("AlternativeGardener.Models.Record", b =>
+                {
+                    b.HasOne("AlternativeGardener.Models.Garden", "Garden")
+                        .WithMany()
+                        .HasForeignKey("GardenId");
+
+                    b.HasOne("AlternativeGardener.Models.AppUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Garden");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -420,6 +673,17 @@ namespace AlternativeGardener.Data.Migrations
                 });
 
             modelBuilder.Entity("AlternativeGardener.Models.Garden", b =>
+                {
+                    b.Navigation("Chemicals");
+
+                    b.Navigation("EquipmentList");
+
+                    b.Navigation("Nutrients");
+
+                    b.Navigation("Plants");
+                });
+
+            modelBuilder.Entity("AlternativeGardener.Models.Record", b =>
                 {
                     b.Navigation("Plants");
                 });
