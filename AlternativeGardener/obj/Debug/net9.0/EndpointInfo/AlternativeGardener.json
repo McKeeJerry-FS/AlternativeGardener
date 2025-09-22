@@ -1,0 +1,134 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "AlternativeGardener",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Garden": {
+      "post": {
+        "tags": [
+          "Garden"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GardenCreateRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GardenCreateRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GardenCreateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Garden"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Garden/{id}": {
+      "get": {
+        "tags": [
+          "Garden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "GardenCreateRequest": {
+        "required": [
+          "gardenName"
+        ],
+        "type": "object",
+        "properties": {
+          "gardenName": {
+            "maxLength": 50,
+            "minLength": 2,
+            "type": "string"
+          },
+          "gardenLocation": {
+            "$ref": "#/components/schemas/Location"
+          },
+          "gardenSize": {
+            "type": "string",
+            "nullable": true
+          },
+          "gardenType": {
+            "$ref": "#/components/schemas/GardenType"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GardenType": {
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "Location": {
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
+}

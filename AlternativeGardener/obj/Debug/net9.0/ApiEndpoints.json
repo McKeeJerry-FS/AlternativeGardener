@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "ContainingType": "AlternativeGardener.Controllers.GardenController",
+    "Method": "CreateGarden",
+    "RelativePath": "api/Garden",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AlternativeGardener.Contracts.Gardens.GardenCreateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AlternativeGardener.Controllers.GardenController",
+    "Method": "GetAll",
+    "RelativePath": "api/Garden",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AlternativeGardener.Controllers.GardenController",
+    "Method": "GetGardenById",
+    "RelativePath": "api/Garden/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
