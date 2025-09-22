@@ -2,12 +2,12 @@
 {
     public enum GrowthStatus
     {
-        NewlyPlanted,
-        Seedling,
-        Vegetative,
-        Budding,
-        Flowering,
-        Fruiting,
-        Dormant
+        NewlyPlanted = 1,
+        Seedling = 2,
+        Vegetative = 3,
+        Budding = 4,
+        Flowering = 5,
+        Fruiting = 5,
+        Dormant = 6
     }
 }

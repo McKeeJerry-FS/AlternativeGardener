@@ -1,6 +1,7 @@
 ﻿using AlternativeGardener.Data;
 using AlternativeGardener.Models;
 using AlternativeGardener.Services.Interfaces;
+using Humanizer;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -76,14 +77,45 @@ namespace AlternativeGardener.Services
             return garden;
         }
 
-        public Task<Garden?> UpdateGarden(int Id, Garden garden)
+        public async Task<Garden?> UpdateGarden(int Id, Garden garden)
         {
-            throw new NotImplementedException();
+            var user = await GetCurrentUserAsync();
+            if (user == null) 
+            { 
+                throw new UnauthorizedAccessException("User not found.");
+            }
+            var existingGarden = await _db.Gardens
+                .FirstOrDefaultAsync(g => g.GardenID == Id && g.User != null && g.User.Id == user.Id);
+            if (existingGarden == null)
+                {
+                return null;
+            }
+            existingGarden.GardenName = garden.GardenName;
+            existingGarden.GardenLocation = garden.GardenLocation;
+            existingGarden.GardenSize = garden.GardenSize;
+            existingGarden.GardenType = garden.GardenType;
+            await _db.SaveChangesAsync();
+            return existingGarden;
+
         }
 
         public Task<bool> DeleteGarden(int Id)
         {
-            throw new NotImplementedException();
+            var user = GetCurrentUserAsync().Result;
+            if (user == null)
+            {
+                throw new UnauthorizedAccessException("User not found.");
+            }
+            var existingGarden = _db.Gardens
+                .FirstOrDefault(g => g.GardenID == Id && g.User != null && g.User.Id == user.Id);
+            if (existingGarden == null)
+            {
+                return Task.FromResult(false);
+            }
+            _db.Gardens.Remove(existingGarden);
+            _db.SaveChanges();
+            return Task.FromResult(true);
+
         }
     }
 }
