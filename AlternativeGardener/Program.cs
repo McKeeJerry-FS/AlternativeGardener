@@ -4,6 +4,7 @@ using AlternativeGardener.Data;
 using AlternativeGardener.Models;
 using AlternativeGardener.Services;
 using AlternativeGardener.Services.Interfaces;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,7 +30,10 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<IGardenService, GardenService>();
 
 builder.Services.AddRazorPages();
-builder.Services.AddControllersWithViews();
+
+// Ensure enums serialize/deserialize as strings in API responses/requests
+builder.Services.AddControllersWithViews()
+    .AddJsonOptions(o => o.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()));
 
 // Swagger services
 builder.Services.AddEndpointsApiExplorer();
