@@ -28,6 +28,7 @@ builder.Services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireCo
 // App services
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<IGardenService, GardenService>();
+builder.Services.AddScoped<IPlantService, PlantService>();
 
 builder.Services.AddRazorPages();
 

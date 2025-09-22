@@ -67,6 +67,67 @@
             "description": "OK"
           }
         }
+      },
+      "put": {
+        "tags": [
+          "Garden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GardenUpdateRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GardenUpdateRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GardenUpdateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Garden"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     }
   },
@@ -98,36 +159,58 @@
       },
       "GardenType": {
         "enum": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12,
-          13,
-          14,
-          15
+          "Vegetable",
+          "Flower",
+          "Herb",
+          "Succulent",
+          "Mixed",
+          "Hydroponic",
+          "Aquaponic",
+          "Bonsai",
+          "Terrarium",
+          "Zen",
+          "Rockery",
+          "Fairy",
+          "Wildlife",
+          "Indoor",
+          "Vertical",
+          "Community"
         ],
-        "type": "integer",
-        "format": "int32"
+        "type": "string"
+      },
+      "GardenUpdateRequest": {
+        "required": [
+          "gardenName"
+        ],
+        "type": "object",
+        "properties": {
+          "gardenName": {
+            "maxLength": 50,
+            "minLength": 2,
+            "type": "string"
+          },
+          "gardenLocation": {
+            "$ref": "#/components/schemas/Location"
+          },
+          "gardenSize": {
+            "type": "string",
+            "nullable": true
+          },
+          "gardenType": {
+            "$ref": "#/components/schemas/GardenType"
+          }
+        },
+        "additionalProperties": false
       },
       "Location": {
         "enum": [
-          0,
-          1,
-          2,
-          3,
-          4
+          "Indoor",
+          "Outdoor",
+          "Greenhouse",
+          "Balcony",
+          "Patio"
         ],
-        "type": "integer",
-        "format": "int32"
+        "type": "string"
       }
     }
   }
