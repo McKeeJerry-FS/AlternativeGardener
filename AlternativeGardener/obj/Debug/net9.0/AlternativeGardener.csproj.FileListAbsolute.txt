@@ -1302,3 +1302,7 @@ C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardene
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.OpenApi.dll
+D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll

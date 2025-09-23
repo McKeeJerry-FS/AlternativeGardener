@@ -5,6 +5,7 @@ using AlternativeGardener.Models;
 using AlternativeGardener.Services;
 using AlternativeGardener.Services.Interfaces;
 using System.Text.Json.Serialization;
+using Microsoft.OpenApi.Models; // add this
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -38,7 +39,14 @@ builder.Services.AddControllersWithViews()
 
 // Swagger services
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "AlternativeGardener API",
+        Version = "v1"
+    });
+});
 
 var app = builder.Build();
 
@@ -54,17 +62,22 @@ if (app.Environment.IsDevelopment())
 {
     app.UseMigrationsEndPoint();
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "AlternativeGardener API v1");
+    });
 }
 else
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 
     // Optionally enable Swagger in non-dev
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "AlternativeGardener API v1");
+    });
 }
 
 app.UseHttpsRedirection();
@@ -74,6 +87,9 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapStaticAssets();
+
+// Map attribute-routed API controllers (required for your [Route]/[Http...] attributes)
+app.MapControllers();
 
 app.MapControllerRoute(
     name: "default",

@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "AlternativeGardener",
-    "version": "1.0"
+    "title": "AlternativeGardener API",
+    "version": "v1"
   },
   "paths": {
     "/api/Garden": {
@@ -129,6 +129,133 @@
           }
         }
       }
+    },
+    "/Plants": {
+      "get": {
+        "tags": [
+          "Plant"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Plant/{id}": {
+      "get": {
+        "tags": [
+          "Plant"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Plant"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlantUpdateRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlantUpdateRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlantUpdateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Plant"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Plant": {
+      "post": {
+        "tags": [
+          "Plant"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlantCreateRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlantCreateRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlantCreateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -211,6 +338,211 @@
           "Patio"
         ],
         "type": "string"
+      },
+      "PlantCreateRequest": {
+        "required": [
+          "plantName"
+        ],
+        "type": "object",
+        "properties": {
+          "plantName": {
+            "maxLength": 50,
+            "minLength": 2,
+            "type": "string"
+          },
+          "species": {
+            "type": "string",
+            "nullable": true
+          },
+          "plantType": {
+            "$ref": "#/components/schemas/PlantType"
+          },
+          "datePlanted": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "note": {
+            "type": "string",
+            "nullable": true
+          },
+          "plantDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "imageUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "careInstructions": {
+            "type": "string",
+            "nullable": true
+          },
+          "isPerennial": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "lastWatered": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "lastFertilized": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "lastPruned": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "gardenId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "sunlightRequirements": {
+            "type": "string",
+            "nullable": true
+          },
+          "soilType": {
+            "type": "string",
+            "nullable": true
+          },
+          "wateringSchedule": {
+            "type": "string",
+            "nullable": true
+          },
+          "fertilizingSchedule": {
+            "type": "string",
+            "nullable": true
+          },
+          "pruningSchedule": {
+            "type": "string",
+            "nullable": true
+          },
+          "pestControlNotes": {
+            "type": "string",
+            "nullable": true
+          },
+          "diseaseControlNotes": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PlantType": {
+        "enum": [
+          "Annual",
+          "Perennial",
+          "Biennial",
+          "Shrub",
+          "Tree",
+          "Vine",
+          "Herb",
+          "Grass",
+          "Succulent",
+          "Fern",
+          "Cactus",
+          "Bulb"
+        ],
+        "type": "string"
+      },
+      "PlantUpdateRequest": {
+        "required": [
+          "plantName"
+        ],
+        "type": "object",
+        "properties": {
+          "plantName": {
+            "maxLength": 50,
+            "minLength": 2,
+            "type": "string"
+          },
+          "species": {
+            "type": "string",
+            "nullable": true
+          },
+          "plantType": {
+            "$ref": "#/components/schemas/PlantType"
+          },
+          "datePlanted": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "note": {
+            "type": "string",
+            "nullable": true
+          },
+          "plantDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "imageUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "careInstructions": {
+            "type": "string",
+            "nullable": true
+          },
+          "isPerennial": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "lastWatered": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "lastFertilized": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "lastPruned": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "gardenId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "sunlightRequirements": {
+            "type": "string",
+            "nullable": true
+          },
+          "soilType": {
+            "type": "string",
+            "nullable": true
+          },
+          "wateringSchedule": {
+            "type": "string",
+            "nullable": true
+          },
+          "fertilizingSchedule": {
+            "type": "string",
+            "nullable": true
+          },
+          "pruningSchedule": {
+            "type": "string",
+            "nullable": true
+          },
+          "pestControlNotes": {
+            "type": "string",
+            "nullable": true
+          },
+          "diseaseControlNotes": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
       }
     }
   }

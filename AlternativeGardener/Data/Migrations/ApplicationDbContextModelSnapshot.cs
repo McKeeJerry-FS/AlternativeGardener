@@ -311,16 +311,22 @@ namespace AlternativeGardener.Data.Migrations
                     b.Property<int?>("Location")
                         .HasColumnType("int");
 
-                    b.Property<string>("Notes")
+                    b.Property<string>("Note")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PestControlNotes")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PlantDescription")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PlantName")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
+
+                    b.Property<int?>("PlantType")
+                        .HasColumnType("int");
 
                     b.Property<string>("PruningSchedule")
                         .HasColumnType("nvarchar(max)");

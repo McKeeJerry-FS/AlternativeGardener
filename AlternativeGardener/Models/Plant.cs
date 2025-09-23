@@ -12,11 +12,12 @@ namespace AlternativeGardener.Models
         [Required]
         [MaxLength(100)]
         public string? PlantName { get; set; }
-
+        public PlantType? PlantType { get; set; }
         public string? Species { get; set; }
         public DateTime DatePlanted { get; set; }
         public GrowthStatus GrowthStatus { get; set; }
-        public string? Notes { get; set; }
+        public string? Note { get; set; }
+        public string? PlantDescription { get; set; }
         public string? ImageUrl { get; set; }
         public string? CareInstructions { get; set; }
         public bool IsPerennial { get; set; }
