@@ -18,7 +18,7 @@ namespace AlternativeGardener.Controllers
             _plantService = plantService;
         }
 
-        [HttpGet("/Plants")]
+        [HttpGet] // resolves to GET /api/Plant
         public async Task<IActionResult> GetAllPlants()
         {
             var plants = await _plantService.GetAllPlantsAsync();

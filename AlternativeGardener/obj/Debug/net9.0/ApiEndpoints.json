@@ -80,6 +80,16 @@
   },
   {
     "ContainingType": "AlternativeGardener.Controllers.PlantController",
+    "Method": "GetAllPlants",
+    "RelativePath": "api/Plant",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AlternativeGardener.Controllers.PlantController",
     "Method": "CreatePlant",
     "RelativePath": "api/Plant",
     "HttpMethod": "POST",
@@ -145,16 +155,6 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AlternativeGardener.Controllers.PlantController",
-    "Method": "GetAllPlants",
-    "RelativePath": "Plants",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
     "ReturnTypes": []
   }
 ]

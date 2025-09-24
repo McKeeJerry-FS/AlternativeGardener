@@ -46,6 +46,11 @@ builder.Services.AddSwaggerGen(c =>
         Title = "AlternativeGardener API",
         Version = "v1"
     });
+    c.SwaggerDoc("v2", new OpenApiInfo
+    {
+        Title = "AlternativeGardener API",
+        Version = "v2"
+    });
 });
 
 var app = builder.Build();
@@ -65,6 +70,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "AlternativeGardener API v1");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "AlternativeGardener API v2");
     });
 }
 else
@@ -77,6 +83,7 @@ else
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "AlternativeGardener API v1");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "AlternativeGardener API v2");
     });
 }
 
