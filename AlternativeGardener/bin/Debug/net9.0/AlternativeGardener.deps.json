@@ -8,9 +8,11 @@
     ".NETCoreApp,Version=v9.0": {
       "AlternativeGardener/1.0.0": {
         "dependencies": {
+          "Asp.Versioning.Mvc": "8.1.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "9.0.9",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9",
           "Microsoft.AspNetCore.Identity.UI": "9.0.9",
+          "Microsoft.AspNetCore.Mvc.Versioning": "5.1.0",
           "Microsoft.EntityFrameworkCore": "9.0.9",
           "Microsoft.EntityFrameworkCore.Design": "9.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
@@ -21,6 +23,36 @@
         },
         "runtime": {
           "AlternativeGardener.dll": {}
+        }
+      },
+      "Asp.Versioning.Abstractions/8.1.0": {
+        "runtime": {
+          "lib/net8.0/Asp.Versioning.Abstractions.dll": {
+            "assemblyVersion": "8.1.0.0",
+            "fileVersion": "8.1.8851.31619"
+          }
+        }
+      },
+      "Asp.Versioning.Http/8.1.0": {
+        "dependencies": {
+          "Asp.Versioning.Abstractions": "8.1.0"
+        },
+        "runtime": {
+          "lib/net8.0/Asp.Versioning.Http.dll": {
+            "assemblyVersion": "8.1.0.0",
+            "fileVersion": "8.1.8851.31627"
+          }
+        }
+      },
+      "Asp.Versioning.Mvc/8.1.0": {
+        "dependencies": {
+          "Asp.Versioning.Http": "8.1.0"
+        },
+        "runtime": {
+          "lib/net8.0/Asp.Versioning.Mvc.dll": {
+            "assemblyVersion": "8.1.0.0",
+            "fileVersion": "8.1.8851.31627"
+          }
         }
       },
       "Azure.Core/1.38.0": {
@@ -617,6 +649,14 @@
           "lib/net9.0/Microsoft.AspNetCore.Identity.UI.dll": {
             "assemblyVersion": "9.0.9.0",
             "fileVersion": "9.0.925.42003"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.Versioning/5.1.0": {
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Mvc.Versioning.dll": {
+            "assemblyVersion": "5.1.0.0",
+            "fileVersion": "5.1.8270.41513"
           }
         }
       },
@@ -2080,6 +2120,27 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Asp.Versioning.Abstractions/8.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mpeNZyMdvrHztJwR1sXIUQ+3iioEU97YMBnFA9WLbsPOYhGwDJnqJMmEd8ny7kcmS9OjTHoEuX/bSXXY3brIFA==",
+      "path": "asp.versioning.abstractions/8.1.0",
+      "hashPath": "asp.versioning.abstractions.8.1.0.nupkg.sha512"
+    },
+    "Asp.Versioning.Http/8.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Xu4xF62Cu9JqYi/CTa2TiK5kyHoa4EluPynj/bPFWDmlTIPzuJQbBI5RgFYVRFHjFVvWMoA77acRaFu7i7Wzqg==",
+      "path": "asp.versioning.http/8.1.0",
+      "hashPath": "asp.versioning.http.8.1.0.nupkg.sha512"
+    },
+    "Asp.Versioning.Mvc/8.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BMAJM2sGsTUw5FQ9upKQt6GFoldWksePgGpYjl56WSRvIuE3UxKZh0gAL+wDTIfLshUZm97VCVxlOGyrcjWz9Q==",
+      "path": "asp.versioning.mvc/8.1.0",
+      "hashPath": "asp.versioning.mvc.8.1.0.nupkg.sha512"
+    },
     "Azure.Core/1.38.0": {
       "type": "package",
       "serviceable": true,
@@ -2464,6 +2525,13 @@
       "sha512": "sha512-XfNdgEDatFIlrui4LWmTnBGIy5RQ8b2ZTj14qklgAgKvYIch5VlaiT0l50xF3SIAIEzJBFeJ7EJqASzHFX4uzQ==",
       "path": "microsoft.aspnetcore.identity.ui/9.0.9",
       "hashPath": "microsoft.aspnetcore.identity.ui.9.0.9.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Mvc.Versioning/5.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UX8w9BlCiZpr6Ox4YAve1w0CkI1CAovukGNzKd7v0+5pZc8lzuG5tRovucr1RWIKHs0E/Yx8563CN7KzaB3bpw==",
+      "path": "microsoft.aspnetcore.mvc.versioning/5.1.0",
+      "hashPath": "microsoft.aspnetcore.mvc.versioning.5.1.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Language/6.0.24": {
       "type": "package",

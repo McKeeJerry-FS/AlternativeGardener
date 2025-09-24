@@ -6,6 +6,7 @@ using AlternativeGardener.Services;
 using AlternativeGardener.Services.Interfaces;
 using System.Text.Json.Serialization;
 using Microsoft.OpenApi.Models; // add this
+using Asp.Versioning;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +26,13 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
+
+builder.Services.AddApiVersioning(options =>
+{
+    options.DefaultApiVersion = new ApiVersion(1, 0); // Set default version
+    options.AssumeDefaultVersionWhenUnspecified = true; // Use default if no version is specified
+    options.ReportApiVersions = true; // Include API versions in response headers
+});
 
 // App services
 builder.Services.AddHttpContextAccessor();
