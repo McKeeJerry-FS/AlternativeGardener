@@ -3,8 +3,32 @@
 
 $(document).ready(function () {
     // DataTable init
-    $('#dashboardGardenTable').DataTable();
-    $('#dashboardPlantTable').DataTable();
+    $('#dashboardGardenTable').DataTable({
+        responsive: true,
+        autoWidth: false,
+        paging: false,
+        searching: false,
+        info: false
+    });
+    $('#dashboardPlantTable').DataTable({
+        responsive: true,
+        autoWidth: false,
+        paging: false,
+        searching: false,
+        info: false
+    });
+
+    // Records table with Responsive extension
+    $('#dashboardRecordsTable').DataTable({
+        responsive: true,
+        autoWidth: false,
+        pageLength: 5,
+        lengthChange: false,
+        columnDefs: [
+            { responsivePriority: 1, targets: 0 },
+            { responsivePriority: 2, targets: 2 }
+        ]
+    });
 
     // Water Quality Chart init (requires Chart.js loaded on the page)
     const canvas = document.getElementById('waterQualityChart');
@@ -43,6 +67,7 @@ $(document).ready(function () {
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,
                 interaction: { mode: 'index', intersect: false },
                 stacked: false,
                 plugins: {
@@ -98,6 +123,7 @@ $(document).ready(function () {
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,
                 plugins: {
                     legend: { position: 'top' },
                     title: { display: true, text: 'Average Plant Growth (Last 6 Weeks)' }

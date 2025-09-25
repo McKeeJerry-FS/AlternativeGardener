@@ -17,6 +17,36 @@ body[b-n1iybuqab0] {
 #card4[b-n1iybuqab0] {
     background-color: lightgray;
 }
+
+#card5[b-n1iybuqab0] {
+    background-color: lightgray;
+}
+
+/* Make charts responsive */
+.chart-container[b-n1iybuqab0] {
+    position: relative;
+    width: 100%;
+    /* 16:9 aspect ratio */
+    aspect-ratio: 16 / 9;
+    min-height: 240px; /* iOS Safari fallback */
+}
+
+.chart-container canvas[b-n1iybuqab0] {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Fallback if aspect-ratio unsupported */
+@supports not (aspect-ratio: 16 / 9) {
+    .chart-container[b-n1iybuqab0] {
+        padding-top: 56.25%;
+    }
+    .chart-container canvas[b-n1iybuqab0] {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
 /* _content/AlternativeGardener/Views/Shared/_Layout.cshtml.rz.scp.css */
 /* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
