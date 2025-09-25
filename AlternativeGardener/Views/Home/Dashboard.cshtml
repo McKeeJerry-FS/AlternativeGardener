@@ -38,9 +38,26 @@
     </div>
     <div class="col-sm-12 col-md-6">
         <div class="card" id="card2">
-            <div class="card-header">Your Plants</div>
+            <div class="card-header bg-primary text-light">Your Plants</div>
             <div class="card-body">
-                <p>Col #2</p>
+                <table class="table table-sm table-striped table-hover" id="dashboardPlantTable">
+                    <thead>
+                        <tr>
+                            <th>Plant Name</th>
+                            <th>Garden Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Romaine Letuce</td>
+                            <td>Rail System</td>
+                        </tr>
+                        <tr>
+                            <td>Sweet Basil</td>
+                            <td>NFT</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
@@ -57,9 +74,9 @@
     </div>
     <div class="col-sm-12 col-md-6">
         <div class="card" id="card4">
-            <div class="card-header">Your Gardens</div>
+            <div class="card-header bg-primary text-light">Average Plant Growth</div>
             <div class="card-body">
-                <p>Col #4</p>
+                <canvas id="plantGrowthChart" height="140"></canvas>
             </div>
         </div>
     </div>

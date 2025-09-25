@@ -4,6 +4,7 @@
 $(document).ready(function () {
     // DataTable init
     $('#dashboardGardenTable').DataTable();
+    $('#dashboardPlantTable').DataTable();
 
     // Water Quality Chart init (requires Chart.js loaded on the page)
     const canvas = document.getElementById('waterQualityChart');
@@ -32,8 +33,8 @@ $(document).ready(function () {
                     },
                     {
                         label: 'Water Temp (F)',
-                        data: [60, 65, 70, 75, 70, 65],
-                        borderColor: 'rgb(255, 159, 64)',
+                        data: [60, 65, 70, 75, 70, 65, 60],
+                        borderColor: 'rgb(255, 104, 25)',
                         backgroundColor: 'rgba(255, 104, 25, 0.2)',
                         tension: 0.3,
                         yAxisID: 'y2',
@@ -71,6 +72,40 @@ $(document).ready(function () {
                         grid: { drawOnChartArea: false },
                         min: 50,
                         max: 90
+                    }
+                }
+            }
+        });
+    }
+
+    // Average Plant Growth Chart in Card4
+    const growthCanvas = document.getElementById('plantGrowthChart');
+    if (growthCanvas && window.Chart) {
+        const gctx = growthCanvas.getContext('2d');
+        const growthChart = new Chart(gctx, {
+            type: 'bar',
+            data: {
+                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6'],
+                datasets: [
+                    {
+                        label: 'Average Height (cm)',
+                        data: [3, 5, 8, 12, 16, 20],
+                        backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                        borderColor: 'rgb(54, 162, 235)',
+                        borderWidth: 1,
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'top' },
+                    title: { display: true, text: 'Average Plant Growth (Last 6 Weeks)' }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'Height (cm)' }
                     }
                 }
             }
