@@ -38,6 +38,7 @@ builder.Services.AddApiVersioning(options =>
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<IGardenService, GardenService>();
 builder.Services.AddScoped<IPlantService, PlantService>();
+builder.Services.AddScoped<IRecordService, RecordService>();
 
 builder.Services.AddRazorPages();
 

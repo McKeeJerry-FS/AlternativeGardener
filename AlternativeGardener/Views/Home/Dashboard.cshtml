@@ -1,0 +1,71 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
+*@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to your Dashboard!</h1>
+    <p>This is a quick snapshot of what is going on with your gardens!</p>
+</div>
+<div class="row">
+    <div class="col-sm-12 col-md-6">
+        <div class="card" id="card1">
+            <div class="card-header bg-primary text-light">Your Gardens</div>
+            <div class="card-body">
+                <table class="table table-sm table-striped table-hover" id="dashboardGardenTable">
+                    <thead>
+                        <tr>
+                            <th>Garden Name</th>
+                            <th>Garden Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Rail System</td>
+                            <td>Grow Tent</td>
+                        </tr>
+                        <tr>
+                            <td>Rail System</td>
+                            <td>Grow Tent</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6">
+        <div class="card" id="card2">
+            <div class="card-header">Your Plants</div>
+            <div class="card-body">
+                <p>Col #2</p>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col-sm-12 col-md-6">
+        <div class="card" id="card3">
+            <div class="card-header bg-primary text-light">Water Quality</div>
+            <div class="card-body">
+                <canvas id="waterQualityChart" height="140"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-6">
+        <div class="card" id="card4">
+            <div class="card-header">Your Gardens</div>
+            <div class="card-body">
+                <p>Col #4</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    <script src="~/js/dashboard.js" asp-append-version="true"></script>
+}
