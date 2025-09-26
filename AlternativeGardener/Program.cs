@@ -41,6 +41,7 @@ builder.Services.AddScoped<IPlantService, PlantService>();
 builder.Services.AddScoped<IRecordService, RecordService>();
 
 builder.Services.AddRazorPages();
+builder.Services.AddControllersWithViews(); // alongside AddRazorPages()
 
 // Ensure enums serialize/deserialize as strings in API responses/requests
 builder.Services.AddControllersWithViews()
@@ -109,10 +110,7 @@ app.MapControllers();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
-
-app.MapRazorPages()
-   .WithStaticAssets();
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapRazorPages();
 
 app.Run();

@@ -1,0 +1,29 @@
+﻿@model IEnumerable<AlternativeGardener.Models.Garden>
+
+<h2>Gardens</h2>
+<table class="table table-striped" id="gardenTable">
+    <thead>
+        <tr>
+            <th>Garden Name</th>
+            <th>Location</th>
+            <th>Size</th>
+            <th>Type</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var g in Model)
+    {
+        <tr>
+            <td>@g.GardenName</td>
+            <td>@g.GardenLocation</td>
+            <td>@g.GardenSize</td>
+            <td>@g.GardenType</td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+
+@section Scripts {
+    <script src="~/js/garden-index.js" asp-append-version="true"></script>
+}

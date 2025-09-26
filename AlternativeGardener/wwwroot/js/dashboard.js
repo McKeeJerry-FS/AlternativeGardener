@@ -30,6 +30,8 @@ $(document).ready(function () {
         ]
     });
 
+   
+
     // Water Quality Chart init (requires Chart.js loaded on the page)
     const canvas = document.getElementById('waterQualityChart');
     if (canvas && window.Chart) {
