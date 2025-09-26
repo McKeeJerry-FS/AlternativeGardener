@@ -1,0 +1,42 @@
+﻿@model AlternativeGardener.Models.Garden
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Garden</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GardenName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GardenName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GardenLocation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GardenLocation)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GardenSize)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GardenSize)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GardenType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GardenType)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.GardenID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

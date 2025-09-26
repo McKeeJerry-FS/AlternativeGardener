@@ -188,6 +188,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[I:/Personally Created Project/AlternativeGardener/AlternativeGardener/Views/Garden/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FyZGVuXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Personally Created Project/AlternativeGardener/AlternativeGardener/Views/Garden/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FyZGVuXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Personally Created Project/AlternativeGardener/AlternativeGardener/Views/Garden/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FyZGVuXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[I:/Personally Created Project/AlternativeGardener/AlternativeGardener/Views/Garden/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FyZGVuXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [I:/Personally Created Project/AlternativeGardener/AlternativeGardener/Views/Garden/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FyZGVuXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

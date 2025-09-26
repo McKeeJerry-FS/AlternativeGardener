@@ -1,6 +1,7 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\dashboard.js
+wwwroot\js\garden-index.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -125,3 +126,4 @@ I:\Personally Created Project\AlternativeGardener\AlternativeGardener\wwwroot\li
 I:\Personally Created Project\AlternativeGardener\AlternativeGardener\wwwroot\lib\jquery\dist\jquery.slim.min.map
 I:\Personally Created Project\AlternativeGardener\AlternativeGardener\wwwroot\lib\jquery\LICENSE.txt
 I:\Personally Created Project\AlternativeGardener\AlternativeGardener\wwwroot\js\dashboard.js
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\wwwroot\js\garden-index.js
