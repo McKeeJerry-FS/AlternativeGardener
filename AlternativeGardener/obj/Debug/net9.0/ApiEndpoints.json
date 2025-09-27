@@ -1,5 +1,15 @@
 [
   {
+    "ContainingType": "AlternativeGardener.Controllers.RecordController",
+    "Method": "GetAllRecords",
+    "RelativePath": "allrecords",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AlternativeGardener.Controllers.GardenController",
     "Method": "CreateGarden",
     "RelativePath": "api/Garden",
@@ -155,6 +165,95 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AlternativeGardener.Controllers.RecordController",
+    "Method": "CreateRecord",
+    "RelativePath": "api/Record",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newRecord",
+        "Type": "AlternativeGardener.Models.Record",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AlternativeGardener.Controllers.RecordController",
+    "Method": "GetRecordById",
+    "RelativePath": "api/Record/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AlternativeGardener.Controllers.RecordController",
+    "Method": "UpdateRecord",
+    "RelativePath": "api/Record/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedRecord",
+        "Type": "AlternativeGardener.Models.Record",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AlternativeGardener.Controllers.RecordController",
+    "Method": "DeleteRecord",
+    "RelativePath": "api/Record/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AlternativeGardener.Controllers.GardenMvcController",
+    "Method": "Index",
+    "RelativePath": "Garden",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AlternativeGardener.Controllers.GardenMvcController",
+    "Method": "Index",
+    "RelativePath": "Garden/Index",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

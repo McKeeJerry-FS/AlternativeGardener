@@ -1,0 +1,48 @@
+﻿@model AlternativeGardener.Models.Garden
+
+@{
+    ViewData["Title"] = "Create Garden";
+}
+
+<h1>Create Garden</h1>
+
+<h4>Create Garden</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="View">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="GardenName" class="control-label"></label>
+                <input asp-for="GardenName" class="form-control" />
+                <span asp-validation-for="GardenName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GardenLocation" class="control-label"></label>
+                <input asp-for="GardenLocation" class="form-control" />
+                <span asp-validation-for="GardenLocation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GardenSize" class="control-label"></label>
+                <input asp-for="GardenSize" class="form-control" />
+                <span asp-validation-for="GardenSize" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GardenType" class="control-label"></label>
+                <input asp-for="GardenType" class="form-control" />
+                <span asp-validation-for="GardenType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

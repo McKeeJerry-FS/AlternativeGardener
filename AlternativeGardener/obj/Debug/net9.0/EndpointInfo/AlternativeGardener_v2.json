@@ -130,6 +130,30 @@
         }
       }
     },
+    "/Garden": {
+      "get": {
+        "tags": [
+          "GardenMvc"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Garden/Index": {
+      "get": {
+        "tags": [
+          "GardenMvc"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Plant": {
       "get": {
         "tags": [
@@ -254,10 +278,381 @@
           }
         }
       }
+    },
+    "/allrecords": {
+      "get": {
+        "tags": [
+          "Record"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Record/{id}": {
+      "get": {
+        "tags": [
+          "Record"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Record"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Record"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Record"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Record"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Record"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Record": {
+      "post": {
+        "tags": [
+          "Record"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Record"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Record"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Record"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
+      "AppUser": {
+        "required": [
+          "firstName",
+          "lastName"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "normalizedUserName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "normalizedEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "emailConfirmed": {
+            "type": "boolean"
+          },
+          "passwordHash": {
+            "type": "string",
+            "nullable": true
+          },
+          "securityStamp": {
+            "type": "string",
+            "nullable": true
+          },
+          "concurrencyStamp": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumberConfirmed": {
+            "type": "boolean"
+          },
+          "twoFactorEnabled": {
+            "type": "boolean"
+          },
+          "lockoutEnd": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "lockoutEnabled": {
+            "type": "boolean"
+          },
+          "accessFailedCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstName": {
+            "maxLength": 100,
+            "minLength": 2,
+            "type": "string"
+          },
+          "lastName": {
+            "maxLength": 100,
+            "minLength": 2,
+            "type": "string"
+          },
+          "fullName": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Chemical": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "chemicalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "description": {
+            "maxLength": 500,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "purchaseDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "supplier": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "userId": {
+            "type": "string",
+            "nullable": true
+          },
+          "user": {
+            "$ref": "#/components/schemas/AppUser"
+          },
+          "gardenId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "garden": {
+            "$ref": "#/components/schemas/Garden"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Equipment": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "equipmentId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "description": {
+            "maxLength": 500,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "purchaseDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "supplier": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "userId": {
+            "type": "string",
+            "nullable": true
+          },
+          "user": {
+            "$ref": "#/components/schemas/AppUser"
+          },
+          "gardenId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Garden": {
+        "required": [
+          "gardenName"
+        ],
+        "type": "object",
+        "properties": {
+          "gardenID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "gardenName": {
+            "maxLength": 50,
+            "minLength": 2,
+            "type": "string"
+          },
+          "gardenLocation": {
+            "$ref": "#/components/schemas/Location"
+          },
+          "gardenSize": {
+            "type": "string",
+            "nullable": true
+          },
+          "gardenType": {
+            "$ref": "#/components/schemas/GardenType"
+          },
+          "user": {
+            "$ref": "#/components/schemas/AppUser"
+          },
+          "plants": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Plant"
+            },
+            "nullable": true
+          },
+          "equipmentList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Equipment"
+            },
+            "nullable": true
+          },
+          "nutrients": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Nutrient"
+            },
+            "nullable": true
+          },
+          "chemicals": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Chemical"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "GardenCreateRequest": {
         "required": [
           "gardenName"
@@ -327,6 +722,17 @@
         },
         "additionalProperties": false
       },
+      "GrowthStatus": {
+        "enum": [
+          "NewlyPlanted",
+          "Seedling",
+          "Vegetative",
+          "Budding",
+          "Flowering",
+          "Dormant"
+        ],
+        "type": "string"
+      },
       "Location": {
         "enum": [
           "Indoor",
@@ -336,6 +742,171 @@
           "Patio"
         ],
         "type": "string"
+      },
+      "Nutrient": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "nutrientId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "description": {
+            "maxLength": 500,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "purchaseDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "supplier": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "userId": {
+            "type": "string",
+            "nullable": true
+          },
+          "user": {
+            "$ref": "#/components/schemas/AppUser"
+          },
+          "gardenId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "garden": {
+            "$ref": "#/components/schemas/Garden"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Plant": {
+        "required": [
+          "plantName"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "plantName": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "plantType": {
+            "$ref": "#/components/schemas/PlantType"
+          },
+          "species": {
+            "type": "string",
+            "nullable": true
+          },
+          "datePlanted": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "growthStatus": {
+            "$ref": "#/components/schemas/GrowthStatus"
+          },
+          "note": {
+            "type": "string",
+            "nullable": true
+          },
+          "plantDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "imageUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "careInstructions": {
+            "type": "string",
+            "nullable": true
+          },
+          "isPerennial": {
+            "type": "boolean"
+          },
+          "lastWatered": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "lastFertilized": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "lastPruned": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "location": {
+            "$ref": "#/components/schemas/Location"
+          },
+          "sunlightRequirements": {
+            "type": "string",
+            "nullable": true
+          },
+          "soilType": {
+            "type": "string",
+            "nullable": true
+          },
+          "wateringSchedule": {
+            "type": "string",
+            "nullable": true
+          },
+          "fertilizingSchedule": {
+            "type": "string",
+            "nullable": true
+          },
+          "pruningSchedule": {
+            "type": "string",
+            "nullable": true
+          },
+          "pestControlNotes": {
+            "type": "string",
+            "nullable": true
+          },
+          "diseaseControlNotes": {
+            "type": "string",
+            "nullable": true
+          },
+          "appUserId": {
+            "type": "string",
+            "nullable": true
+          },
+          "appUser": {
+            "$ref": "#/components/schemas/AppUser"
+          },
+          "gardenId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "garden": {
+            "$ref": "#/components/schemas/Garden"
+          }
+        },
+        "additionalProperties": false
       },
       "PlantCreateRequest": {
         "required": [
@@ -538,6 +1109,63 @@
           "diseaseControlNotes": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Record": {
+        "required": [
+          "createdDate"
+        ],
+        "type": "object",
+        "properties": {
+          "recordId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "notes": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "userId": {
+            "type": "string",
+            "nullable": true
+          },
+          "user": {
+            "$ref": "#/components/schemas/AppUser"
+          },
+          "gardenId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "garden": {
+            "$ref": "#/components/schemas/Garden"
+          },
+          "plants": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Plant"
+            },
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false

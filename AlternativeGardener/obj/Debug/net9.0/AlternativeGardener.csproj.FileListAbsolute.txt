@@ -423,8 +423,6 @@ I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\
 I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\oani2aa1xg-muycvpuwrr.gz
 I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\16md50umbv-87fc7y1x7t.gz
 I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\abq7runw6r-mlv21k5csn.gz
-I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\u9wspn13vx-qw982kmpmv.gz
-I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\elaivgd71t-qw982kmpmv.gz
 I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\staticwebassets.build.json
 I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\staticwebassets.build.json.cache
 I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\staticwebassets.development.json
@@ -1310,3 +1308,16 @@ D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Asp.Ve
 D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Asp.Versioning.Http.dll
 D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Asp.Versioning.Mvc.dll
 D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Asp.Versioning.Abstractions.dll
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Asp.Versioning.Http.dll
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Asp.Versioning.Mvc.dll
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.OpenApi.dll
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\scopedcss\Views\Home\Dashboard.cshtml.rz.scp.css
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\u9wspn13vx-gpf21a4cpd.gz
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\elaivgd71t-gpf21a4cpd.gz
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\wpblqqu9pb-eaq6hgpyv0.gz
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\syb943dz1f-mnh14ewwci.gz
