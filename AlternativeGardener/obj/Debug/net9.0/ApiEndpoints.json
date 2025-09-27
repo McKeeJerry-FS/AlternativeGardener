@@ -235,25 +235,5 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AlternativeGardener.Controllers.GardenMvcController",
-    "Method": "Index",
-    "RelativePath": "Garden",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AlternativeGardener.Controllers.GardenMvcController",
-    "Method": "Index",
-    "RelativePath": "Garden/Index",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
   }
 ]

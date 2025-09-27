@@ -130,30 +130,6 @@
         }
       }
     },
-    "/Garden": {
-      "get": {
-        "tags": [
-          "GardenMvc"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/Garden/Index": {
-      "get": {
-        "tags": [
-          "GardenMvc"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/Plant": {
       "get": {
         "tags": [

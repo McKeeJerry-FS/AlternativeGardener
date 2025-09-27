@@ -858,6 +858,27 @@ D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\refint
 D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\AlternativeGardener.pdb
 D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\AlternativeGardener.genruntimeconfig.cache
 D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\ref\AlternativeGardener.dll
+D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.OpenApi.dll
+D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Asp.Versioning.Abstractions.dll
+D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Asp.Versioning.Http.dll
+D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Asp.Versioning.Mvc.dll
+D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Asp.Versioning.Abstractions.dll
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Asp.Versioning.Http.dll
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Asp.Versioning.Mvc.dll
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.OpenApi.dll
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\scopedcss\Views\Home\Dashboard.cshtml.rz.scp.css
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\u9wspn13vx-gpf21a4cpd.gz
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\elaivgd71t-gpf21a4cpd.gz
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\wpblqqu9pb-eaq6hgpyv0.gz
+I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\syb943dz1f-mnh14ewwci.gz
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\appsettings.json
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\AlternativeGardener.staticwebassets.runtime.json
@@ -868,6 +889,9 @@ C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardene
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\AlternativeGardener.runtimeconfig.json
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\AlternativeGardener.dll
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\AlternativeGardener.pdb
+C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Asp.Versioning.Abstractions.dll
+C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Asp.Versioning.Http.dll
+C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Asp.Versioning.Mvc.dll
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Azure.Core.dll
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Azure.Identity.dll
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Humanizer.dll
@@ -876,6 +900,7 @@ C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardene
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.Versioning.dll
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.Build.dll
@@ -926,6 +951,7 @@ C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardene
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.NET.StringTools.dll
+C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.OpenApi.dll
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -949,6 +975,9 @@ C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardene
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\SQLitePCLRaw.batteries_v2.dll
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\SQLitePCLRaw.core.dll
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\System.ClientModel.dll
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\System.CodeDom.dll
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\System.Composition.AttributedModel.dll
@@ -1156,6 +1185,7 @@ C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardene
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\scopedcss\Views\Home\Dashboard.cshtml.rz.scp.css
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\scopedcss\bundle\AlternativeGardener.styles.css
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\scopedcss\projectbundle\AlternativeGardener.bundle.scp.css
@@ -1223,6 +1253,8 @@ C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardene
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\yfc7ypekbg-mlv21k5csn.gz
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\ospl3sd229-b9sayid5wm.gz
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\23cr0kx7si-61n19gt1b8.gz
+C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\wpblqqu9pb-eaq6hgpyv0.gz
+C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\syb943dz1f-mnh14ewwci.gz
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\7vlkuuv9mj-xtxxf3hu2r.gz
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\uk4foljq5x-t1cqhe9u97.gz
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\vnqs8qfuqt-c2jlpeoesf.gz
@@ -1283,8 +1315,8 @@ C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardene
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\oani2aa1xg-9vr69e8ynj.gz
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\16md50umbv-87fc7y1x7t.gz
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\abq7runw6r-mlv21k5csn.gz
-C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\u9wspn13vx-qw982kmpmv.gz
-C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\elaivgd71t-qw982kmpmv.gz
+C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\u9wspn13vx-gpf21a4cpd.gz
+C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\elaivgd71t-gpf21a4cpd.gz
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\staticwebassets.development.json
@@ -1296,28 +1328,3 @@ C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardene
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\AlternativeGardener.pdb
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\AlternativeGardener.genruntimeconfig.cache
 C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\ref\AlternativeGardener.dll
-C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.OpenApi.dll
-C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\jerry\source\repos\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.OpenApi.dll
-D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
-D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Asp.Versioning.Abstractions.dll
-D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Asp.Versioning.Http.dll
-D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Asp.Versioning.Mvc.dll
-D:\McKeeJerry-FS\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.Versioning.dll
-I:\Personally Created Project\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Asp.Versioning.Abstractions.dll
-I:\Personally Created Project\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Asp.Versioning.Http.dll
-I:\Personally Created Project\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Asp.Versioning.Mvc.dll
-I:\Personally Created Project\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.Versioning.dll
-I:\Personally Created Project\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Microsoft.OpenApi.dll
-I:\Personally Created Project\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
-I:\Personally Created Project\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-I:\Personally Created Project\AlternativeGardener\AlternativeGardener\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\scopedcss\Views\Home\Dashboard.cshtml.rz.scp.css
-I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\u9wspn13vx-gpf21a4cpd.gz
-I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\elaivgd71t-gpf21a4cpd.gz
-I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\wpblqqu9pb-eaq6hgpyv0.gz
-I:\Personally Created Project\AlternativeGardener\AlternativeGardener\obj\Debug\net9.0\compressed\syb943dz1f-mnh14ewwci.gz

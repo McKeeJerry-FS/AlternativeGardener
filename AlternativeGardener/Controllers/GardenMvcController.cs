@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using AlternativeGardener.Services.Interfaces;
+using AlternativeGardener.Models; // added for Garden model
 
 namespace AlternativeGardener.Controllers
 {
@@ -26,9 +27,26 @@ namespace AlternativeGardener.Controllers
             return View("~/Views/Garden/Details.cshtml", garden); // Views/Garden/Details.cshtml
         }
 
-        public async Task<IActionResult> Create()
+        [HttpGet]
+        public IActionResult Create()
         {
             return View("~/Views/Garden/Create.cshtml"); // Views/Garden/Create.cshtml
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(Garden garden)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View("~/Views/Garden/Create.cshtml", garden);
+            }
+            var created = await _gardenService.CreateGardenAsync(garden);
+            if (created == null)
+            {
+                return Unauthorized();
+            }
+            return RedirectToAction(nameof(Index));
         }
 
         public async Task<IActionResult> Edit(int id)
